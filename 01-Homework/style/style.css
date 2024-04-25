@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+p {
+    color: rgb(81, 81, 81);
+    font-size: 14px;
+}
+
+p:first-of-type {
+    margin-bottom: 16px;
+}
+
+.wrapper {
+    --_max-w: 1240px;
+
+    margin-inline: auto;
+    width: min(100% - 1.25rem, var(--_max-w));
+    padding-block: 2rem;
+    font-size: 0;
+}
+
+.wrapper> :where(:not(:last-child)) {
+    margin-right: 1.5rem;
+}
+
+.card {
+    --_max-w-card: calc(var(--_max-w) / 3 - 1rem);
+    
+    width: min(100%, var(--_max-w-card));
+    border-radius: 24px;
+    background-color: lightskyblue;
+    padding: 24px;
+    display: inline-block;
+}
+
+.card__icon {
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.card__title {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
