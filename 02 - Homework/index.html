@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__content">
+          <h1>
+            <ion-icon name="earth"></ion-icon>
+            My Website <span>with a <strong>flexible</strong> layout</span>
+          </h1>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li>
+            <a href="#"
+              ><ion-icon name="chevron-forward-outline"></ion-icon> Link</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="chevron-forward-outline"></ion-icon> Link</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="chevron-forward-outline"></ion-icon> Link</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="chevron-forward-outline"></ion-icon> Link</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="about-me">
+          <h3 class="section-title">About me</h3>
+          <figure>
+            <figcaption>Photo of me</figcaption>
+            <img
+              src="https://images.pexels.com/photos/840916/pexels-photo-840916.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="me"
+            />
+          </figure>
+        </section>
+        <section class="main-content">
+          <h3 class="section-title">Title Heading</h3>
+          <figure>
+            <figcaption>Title description, <span id="date"></span></figcaption>
+            <img
+              src="https://images.pexels.com/photos/21308405/pexels-photo-21308405/free-photo-of-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="scenery"
+            />
+          </figure>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      date.textContent = new Date().toDateString();
+    </script>
+  </body>
+</html>
